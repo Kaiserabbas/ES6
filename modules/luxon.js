@@ -1,3 +1,4 @@
+/* eslint-disable */ /* using luxon library for date */
 import { DateTime } from 'luxon';
 
 const DateOrTime = luxon.DateTime;
@@ -20,4 +21,4 @@ const dateAndTime = () => {
   dateDiv.innerHTML = ` ${day} - ${month} - ${year}| ${monthName} | ${weekDay} | ${hour} : ${min} : ${sec} | ${zone}`;
 };
 
-export { dateAndTime };
+export default dateAndTime;
