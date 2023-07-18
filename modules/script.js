@@ -49,6 +49,7 @@ export const addBooks = (event) => {
   authorInput.value = '';
 
   // Update the books list
+  // eslint-disable-next-line no-use-before-define
   showBooks();
 };
 
@@ -58,6 +59,7 @@ export const removeBook = (index) => {
   Book.removeBook(index);
 
   // Update the book list
+  // eslint-disable-next-line no-use-before-define
   showBooks();
 };
 

@@ -1,6 +1,6 @@
-import { dateAndTime } from '../modules/luxon';
-import { pageDisplay } from '../modules/page-content';
-import * as script from '../modules/script';
+import dateAndTime from '../modules/luxon.js';
+import pageDisplay from '../modules/page-content.js';
+import * as script from '../modules/script.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const list1 = document.getElementById('listbtn1');
@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   script.addBooks();
   script.removeBook();
   script.showBooks();
-  script.bookForm.addEventListener('submit', addBooks);
-  script.bookForm.addEventListener('submit', showBooks);
+  script.bookForm.addEventListener('submit', script.addBooks);
+  script.bookForm.addEventListener('submit', script.showBooks);
 });
